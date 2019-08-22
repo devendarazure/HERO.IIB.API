@@ -11,6 +11,7 @@ CREATE COMPUTE MODULE Test_devops_Compute
 		SET OutputRoot.XMLNSC.Data.Project = 'HERO';
 		SET OutputRoot.XMLNSC.Data.Location = 'Waverock';
 		SET OutputRoot.XMLNSC.Data.Lead = 'Surya';
+		SET OutputRoot.XMLNSC.Data.Budget = '5';
 		
 		RETURN TRUE;
 	END;
