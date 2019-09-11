@@ -12,6 +12,9 @@ CREATE COMPUTE MODULE Test_devops_Compute
 		SET OutputRoot.XMLNSC.Data.Location = 'Waverock';
 		SET OutputRoot.XMLNSC.Data.Lead = 'Surya';
 		SET OutputRoot.XMLNSC.Data.Budget = '5';
+		SET OutputRoot.XMLNSC.Data.DevOpsStatus = 'InProgress';
+		SET OutputRoot.XMLNSC.Data.DataMigration = 'Not-Blocked';
+		SET OutputRoot.XMLNSC.Data.DevOpsStatus = 'In Progres';
 		
 		RETURN TRUE;
 	END;
