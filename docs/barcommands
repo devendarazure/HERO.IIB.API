@@ -1,0 +1,47 @@
+yum -y install xorg-x11-server-Xvfb
+/usr/bin/Xvfb :99 -screen 0 800x600x24&
+export DISPLAY=99
+.project
+DISPLAY=":99" ./mqsicreatebar -data /root/code/HERO.IIB.API -b testbar.bar -a /TestIIBProject
+
+
+DISPLAY=":99" ./mqsicreatebar -data /root/code/HERO.IIB.API -b testbar.bar -a /TestIIBProject
+
+
+DISPLAY=":99" ./mqsipackagebar -w /root/code/HERO.IIB.API -a /root/code/HERO.IIB.API/testbar.bar -k /TestIIBProject
+
+
+cd /root/iibdump/iib-10.0.0.17/server/bin
+docker exec DISPLAY=":99" /root/iibdump/iib-10.0.0.17/server/bin/mqsipackagebar -w /root/code/HERO.IIB.API -a /root/code/HERO.IIB.API/testbar.bar -k /TestIIBProject
+DISPLAY=":99" /opt/ibm/iib-10.0.0.11/server/bin/mqsipackagebar -w /root/code/HERO.IIB.API -a /root/code/HERO.IIB.API/testbar.bar -k /TestIIBProject
+
+
+sudo docker exec b4847aa08ac1 /bin/bash -c /opt/ibm/iib-10.0.0.11/tools/mqsicreatebar -data /root/code/HERO.IIB.API -b testbar.bar -a /TestIIBProject
+
+/root/iibdump/iib-10.0.0.17/tools
+
+
+[root@ip-172-31-1-140 x86_64]# cd /opt/iibdump/iib-10.0.0.17/tools
+[root@ip-172-31-1-140 tools]#  DISPLAY=":99" ./mqsicreatebar -data /root/code/HERO.IIB.API/TestIIBProject -b testbar.bar -a Test_12
+
+DISPLAY=":99" ./mqsicreatebar -data /root/code/HERO.IIB.API -b testbar.bar -a /TestIIBProject
+
+
+
+cd /opt/iibdump/iib-10.0.0.17/server/bin
+
+docker exec DISPLAY=":99" ./mqsipackagebar -w /root/code/HERO.IIB.API -a /root/code/HERO.IIB.API/testbar.bar -k /TestIIBProject
+
+
+sudo docker exec b4847aa08ac1 /bin/bash -c /opt/ibm/iib-10.0.0.11/tools/mqsicreatebar -data /root/code/HERO.IIB.API -b testbar.bar -a /TestIIBProject
+
+
+
+sudo docker exec b4847aa08ac1 /bin/bash -c /opt/ibm/iib-10.0.0.11/server/bin/mqsipackagebar -a testbar1.bar -o /root/code/HERO.IIB.API/TestIIBProject -w /root/code/HERO.IIB.API  -k /TestIIBProject
+
+
+
+
+sudo docker exec b4847aa08ac1 /bin/bash -c /opt/ibm/iib-10.0.0.11/server/bin/mqsipackagebar -a testbar1.bar -w /root/code/HERO.IIB.API  -k /TestIIBProject
+
+
