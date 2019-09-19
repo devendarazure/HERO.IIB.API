@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>Test_12</name>
+	<name>TestIIBProject</name>
 	<comment></comment>
 	<projects>
 	</projects>
@@ -106,3 +106,4 @@
 		<nature>com.ibm.etools.msgbroker.tooling.messageBrokerProjectNature</nature>
 	</natures>
 </projectDescription>
+
