@@ -7,6 +7,8 @@
 
 FROM devendar83/iibtoolv4
 
+USER root
+
 COPY start.sh start.sh
 RUN chmod +x start.sh
 
