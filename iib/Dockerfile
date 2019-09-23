@@ -12,6 +12,9 @@ USER root
 COPY start.sh start.sh
 RUN chmod +x start.sh
 
+RUN mkdir /home/iibuser/HERO.IIB.API
+
+RUN chmod -R 777 /home
 
 USER iibuser
 
