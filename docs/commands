@@ -1,0 +1,56 @@
+#!/bin/bash
+\
+
+CMD ["/bin/bash", "./start.sh"]
+
+docker run --name myNode -e LICENSE=accept -e NODENAME=MYNODE -e SERVERNAME=MYSERVER -P devendar83/iibtoolv4t
+
+ENTRYPOINT service nginx start && service ssh start &&/bin/bash "use && to separate your code"
+
+DISPLAY=":0" /opt/ibm/iib-10.0.0.11/tools/mqsicreatebar -data HERO.IIB.API -b test1.bar -P TestIIBProject -o /home/iibuser/HERO.IIB.API/TestIIBProject/Test_devops.msgflow/Test_devops.msgflow
+
+DISPLAY=":0" /opt/ibm/iib-10.0.0.11/tools/mqsicreatebar -data HERO.IIB.API -b test1.bar -P TestIIBProject -o /home/iibuser/HERO.IIB.API/TestIIBProject/Test_devops.msgflow/Test_devops.msgflow
+
+===============
+Docker volumes
+----
+
+docker run -v /host/directory:/container/directory -t IMAGE-NAME /bin/bash
+
+docker run -v /root/shareData:/home/shareData -t kylemanna/openvpn /bin/bash
+
+------------------------------------
+
+With docker-compose, for example, it’s enough to add the following:
+
+volumes:
+  - /path/source/on/host:/path/destination/on/container
+
+Then, when running:
+
+ docker start <image_id>
+ 
+ 
+ ssh dockeradmin@20.36.35.248
+ 
+ docker run -v /host/directory:/container/directory -t IMAGE-NAME /bin/bash
+ 
+ docker run -v /host/directory:/container/directory -t IMAGE-NAME /bin/bash
+
+Source:   /home/administrator/HERO.IIB.API
+
+Destination: /home/iibuser/HERO.IIB.API
+
+sudo docker exec -it 5b210bf2e757 /bin/bash
+
+sudo docker run -v /home/dockeradmin/HERO.IIB.API:/home/iibuser/HERO.IIB.API  --name myNode -e LICENSE=accept  -e NODENAME=MYNODE -e SERVERNAME=MYSERVER -t devendar83/iibtoolv4 /bin/bash
+
+sudo docker run --name myNode -e LICENSE=accept -e NODENAME=MYNODE -e SERVERNAME=MYSERVER -P 7ba62b00e2cc
+
+sudo docker exec -it 34bfd861500d /bin/bash
+
+sudo docker exec -it cc77fcd5b47d /bin/bash
+
+
+Xvfb :0 & DISPLAY=”:0” /opt/ibm/iib-10.0.0.11/tools/mqsicreatebar -data HERO.IIB.API -b mounttest.bar -P TestIIBProject -o /home/iibuser/HERO.IIB.API/TestIIBProject/Test_devops.msgflow/Test_devops.msgflow
+
