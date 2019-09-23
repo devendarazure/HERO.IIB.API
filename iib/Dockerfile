@@ -14,7 +14,7 @@ RUN chmod +x start.sh
 
 RUN mkdir /home/iibuser/HERO.IIB.API
 
-RUN chmod -R 777 /home
+RUN chmod -R 777 /home/iibuser/HERO.IIB.API
 
 USER iibuser
 
