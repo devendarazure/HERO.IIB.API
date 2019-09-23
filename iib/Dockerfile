@@ -1,0 +1,20 @@
+# © Copyright IBM Corporation 2015.
+#
+# All rights reserved. This program and the accompanying materials
+# are made available under the terms of the Eclipse Public License v1.0
+# which accompanies this distribution, and is available at
+# http://www.eclipse.org/legal/epl-v10.html
+
+FROM devendar83/iibtoolv4
+
+COPY start.sh start.sh
+RUN chmod +x start.sh
+
+
+USER iibuser
+
+# Set entrypoint to run management script
+
+ENTRYPOINT ["iib_manage.sh"]
+
+CMD ["./start.sh"]
