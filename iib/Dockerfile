@@ -61,11 +61,14 @@ ENV MQSI_MQTT_LOCAL_HOSTNAME=127.0.0.1
 # Expose default admin port and http port
 EXPOSE 4414 7800
 
+COPY start.sh start.sh
+RUN chmod +x start.sh
+
+
 USER iibuser
 
 # Set entrypoint to run management script
 ENTRYPOINT ["iib_manage.sh"]
-COPY start.sh start.sh
-RUN chmod +x start.sh
+
 CMD ["./start.sh"]
 
