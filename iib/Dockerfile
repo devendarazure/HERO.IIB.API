@@ -20,7 +20,7 @@ RUN mkdir /home/iibuser/HERO.IIB.API
 
 RUN chmod -R 777 /home/iibuser/HERO.IIB.API
 
-RUN ls -ltr
+RUN ls -ltr /home/iibuser
 
 RUN cd /home/iibuser
 
