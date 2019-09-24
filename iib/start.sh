@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "BAR build command execution started here"
+echo "***************BAR build command execution started here*************************"
 
 #Run the IIB container  before build start.Below is the command which we have included in piepline itslef.
 
