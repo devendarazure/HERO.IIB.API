@@ -22,6 +22,8 @@ RUN chmod -R 777 /home/iibuser/HERO.IIB.API
 
 RUN ls -ltr
 
+RUN cd home/iibuser
+
 USER iibuser
 
 # Set entrypoint to run management script
