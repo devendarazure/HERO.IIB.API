@@ -24,6 +24,10 @@ RUN ls -ltr
 
 RUN cd home/iibuser
 
+RUN pwd
+
+RUN ls -ltr
+
 USER iibuser
 
 # Set entrypoint to run management script
