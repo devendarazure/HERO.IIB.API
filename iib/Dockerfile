@@ -9,6 +9,10 @@ FROM devendar83/iibtoolv4
 
 USER root
 
+ENV LICENSE=accept
+ENV NODENAME=MYNODE
+ENV SERVERNAME=MYSERVER
+
 COPY start.sh start.sh
 RUN chmod +x start.sh
 
