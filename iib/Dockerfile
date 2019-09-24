@@ -22,7 +22,7 @@ RUN chmod -R 777 /home/iibuser/HERO.IIB.API
 
 RUN ls -ltr
 
-RUN cd home/iibuser
+RUN cd /home/iibuser
 
 RUN pwd
 
