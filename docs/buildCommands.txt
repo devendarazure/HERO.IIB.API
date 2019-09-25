@@ -1,5 +1,5 @@
 sudo apt-get update
-sudo apt-get instyall docker
+sudo apt-get install docker
 
 sudo docker pull devendar83/iibtoolv4
 git clone https://4gbb6amk62hhfhzzq2tl3q3krg5x6f7q3khtmsmnm3svhu7w5p5q@dev.azure.com/TCSHCDevOpsCOP/HEROPOC/_git/HERO.IIB.API
