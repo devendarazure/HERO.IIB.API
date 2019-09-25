@@ -9,6 +9,7 @@ sudo docker run -v /home/ubuntu/HERO.IIB.API:/home/iibuser/HERO.IIB.API --name m
 
 Duplicate session
 	sudo docker exec -it 0d05f1e961e6 /bin/bash
-	sudo mkdir HERO.IIB.API
+	cd
+	#sudo mkdir HERO.IIB.API
 	sudo chmod -R 777 HERO.IIB.API
 	sudo Xvfb :0 & DISPLAY=":0" /opt/ibm/iib-10.0.0.11/tools/mqsicreatebar -data HERO.IIB.API -b mounttest.bar -P TestIIBProject -o /home/iibuser/HERO.IIB.API/TestIIBProject/Test_devops.msgflow/Test_devops.msgflow
