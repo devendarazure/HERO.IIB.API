@@ -8,7 +8,9 @@ echo "***************BAR build command execution started here*******************
 
 #Bar build command
 
-cd  /home/iibuser/HERO.IIB.API
+ln -s /home/iibuser/HERO.IIB.API ~/iibpath
+
+cd ~/iibpath
 
 ls -ltr
 
