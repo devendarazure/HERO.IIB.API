@@ -14,6 +14,8 @@ cd ~/iibpath
 
 ls -ltr
 
+pwd
+
 touch testdevendar25sept7PM.txt
 
 ls -ltr
