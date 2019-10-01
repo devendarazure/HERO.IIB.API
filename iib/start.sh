@@ -29,4 +29,4 @@ sudo Xvfb & sudo DISPLAY=":0" /opt/ibm/iib-10.0.0.11/tools/mqsicreatebar -data H
 
 pwd
 ls -ltr
-sudo cp *.bar /home/iibuser/HERO.IIB.API/"
+sudo cp *.bar /home/iibuser/HERO.IIB.API/
