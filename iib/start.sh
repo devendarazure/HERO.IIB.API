@@ -8,21 +8,25 @@ echo "***************BAR build command execution started here*******************
 
 #Bar build command
 
-ln -s /home/iibuser/HERO.IIB.API ~/iibpath
+#ln -s /home/iibuser/HERO.IIB.API ~/iibpath
 
-cd ~/iibpath
+#cd ~/iibpath
 
-ls -ltr
+#ls -ltr
 
-pwd
+#pwd
 
-touch testdevendar25sept7PM.txt
-
-ls -ltr
+#ls -ltr
 #Xvfb :0 & DISPLAY=”:0” /opt/ibm/iib-10.0.0.11/tools/mqsicreatebar -data /home/iibuser/HERO.IIB.API -b myflow.bar -p TestIIBProject
 
 #DISPLAY=”:0” /opt/ibm/iib-10.0.0.11/tools/mqsicreatebar -data /home/iibuser/HERO.IIB.API -b /home/iibuser/HERO.IIB.API/myflow.bar -p TestIIBProject
 
-sudo Xvfb :0 & DISPLAY=”:0” /opt/ibm/iib-10.0.0.11/tools/mqsicreatebar -data /home/iibuser/HERO.IIB.API -b testbar25sept7PM.bar -P TestIIBProject -o /home/iibuser/HERO.IIB.API/TestIIBProject/Test_devops.msgflow/Test_devops.msgflow
+#sudo Xvfb :0 & DISPLAY=”:0” /opt/ibm/iib-10.0.0.11/tools/mqsicreatebar -data /home/iibuser/HERO.IIB.API -b testbar25sept7PM.bar -P TestIIBProject -o /home/iibuser/HERO.IIB.API/TestIIBProject/Test_devops.msgflow/Test_devops.msgflow
 
 #sudo DISPLAY=”:0” /opt/ibm/iib-10.0.0.11/tools/mqsicreatebar -data /home/iibuser/HERO.IIB.API -b /home/iibuser/HERO.IIB.API/myflow.bar -p TestIIBProject
+
+sudo Xvfb & sudo DISPLAY=":0" /opt/ibm/iib-10.0.0.11/tools/mqsicreatebar -data HERO.IIB.API -b barsripttest1oct.bar -P TestIIBProject -o /home/iibuser/HERO.IIB.API/TestIIBProject/Test_devops.msgflow/Test_devops.msgflow
+
+pwd
+ls -ltr
+sudo cp *.bar /home/iibuser/HERO.IIB.API/"
