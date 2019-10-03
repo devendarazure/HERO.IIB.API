@@ -18,7 +18,7 @@ echo "***************BAR build command execution started here*******************
 
 #ls -ltr
 
-sudo mkdir /home/iibuser/buildout
+sudo mkdir /home/iibuser/HERO.IIB.API/buildout
 
 #Xvfb :0 & DISPLAY=”:0” /opt/ibm/iib-10.0.0.11/tools/mqsicreatebar -data /home/iibuser/HERO.IIB.API -b myflow.bar -p TestIIBProject
 
@@ -36,4 +36,4 @@ ls -ltr
 
 sudo cp *.bar /home/iibuser/HERO.IIB.API/
 
-sudo cp *.bar /home/iibuser/buildout
+sudo cp *.bar /home/iibuser/HERO.IIB.API/buildout
