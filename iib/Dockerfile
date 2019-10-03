@@ -24,7 +24,7 @@ RUN ls -ltr /home/iibuser
 
 RUN ls -ltr /home/iibuser/HERO.IIB.API
 
-CMD ln -s /home/iibuser/HERO.IIB.API ~lnHERO
+RUN ln -s /home/iibuser/HERO.IIB.API ~lnHERO
 
 RUN cd ~lnHERO
 
