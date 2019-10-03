@@ -24,7 +24,9 @@ RUN ls -ltr /home/iibuser
 
 RUN ls -ltr /home/iibuser/HERO.IIB.API
 
-RUN cd /home/iibuser/HERO.IIB.API
+CMD lsn -s /home/iibuser/HERO.IIB.API ~lnHERO
+
+RUN cd ~lnHERO
 
 RUN pwd
 
@@ -33,6 +35,8 @@ RUN ls -ltr
 RUN mkdir /home/iibuser/HERO.IIB.API/buildout
 
 RUN chmod -R 777 /home/iibuser/HERO.IIB.API/buildout
+
+
 
 USER iibuser
 
