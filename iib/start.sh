@@ -17,6 +17,9 @@ echo "***************BAR build command execution started here*******************
 #pwd
 
 #ls -ltr
+
+sudo mkdir /home/iibuser/buildout
+
 #Xvfb :0 & DISPLAY=”:0” /opt/ibm/iib-10.0.0.11/tools/mqsicreatebar -data /home/iibuser/HERO.IIB.API -b myflow.bar -p TestIIBProject
 
 #DISPLAY=”:0” /opt/ibm/iib-10.0.0.11/tools/mqsicreatebar -data /home/iibuser/HERO.IIB.API -b /home/iibuser/HERO.IIB.API/myflow.bar -p TestIIBProject
@@ -28,5 +31,9 @@ echo "***************BAR build command execution started here*******************
 sudo Xvfb & sudo DISPLAY=":0" /opt/ibm/iib-10.0.0.11/tools/mqsicreatebar -data HERO.IIB.API -b barsripttest1oct.bar -P TestIIBProject -o /home/iibuser/HERO.IIB.API/TestIIBProject/Test_devops.msgflow/Test_devops.msgflow && pwd && ls -ltr && sudo cp *.bar /home/iibuser/HERO.IIB.API/
 
 pwd
+
 ls -ltr
+
 sudo cp *.bar /home/iibuser/HERO.IIB.API/
+
+sudo cp *.bar /home/iibuser/buildout
