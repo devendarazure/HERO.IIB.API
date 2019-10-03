@@ -30,9 +30,9 @@ RUN pwd
 
 RUN ls -ltr
 
-RUN mkdir /home/iibuser/HERO.IIB.API/buidout
+RUN mkdir /home/iibuser/HERO.IIB.API/buildout
 
-RUN chmod -R 777 /home/iibuser/HERO.IIB.API/buidout
+RUN chmod -R 777 /home/iibuser/HERO.IIB.API/buildout
 
 USER iibuser
 
