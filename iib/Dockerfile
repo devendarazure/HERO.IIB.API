@@ -30,6 +30,10 @@ RUN pwd
 
 RUN ls -ltr
 
+RUN mkdir /home/iibuser/HERO.IIB.API/buidout
+
+RUN chmod -R 777 /home/iibuser/HERO.IIB.API/buidout
+
 USER iibuser
 
 # Set entrypoint to run management script
