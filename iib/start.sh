@@ -22,7 +22,7 @@ pwd
 
 ls -ltr
 
-sudo cp /*.bar -a /home/iibuser/HERO.IIB.API/
+sudo cp /*.* -a /home/iibuser/HERO.IIB.API/
 
 sudo touch devendar.txt
 
