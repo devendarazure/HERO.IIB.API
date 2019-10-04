@@ -20,15 +20,23 @@ RUN mkdir /home/iibuser/HERO.IIB.API
 
 RUN chmod -R 777 /home/iibuser/HERO.IIB.API
 
+RUN echo "details from /home/iibuser"
 RUN ls -ltr /home/iibuser
-
 RUN ls -ltr /home/iibuser/HERO.IIB.API
+RUN echo "details from /home/iibuser/HERO.IIB.API"
 
-RUN ln -s /home/iibuser/HERO.IIB.API ~lnHERO
+RUN echo "creating softlink for /home/iibuser/HERO.IIB.API"
+RUN ln -s /home/iibuser/HERO.IIB.API lnHERO
 
-RUN cd ~lnHERO
+RUN echo "cd to softlink folder lnHERO"
+
+RUN cd lnHERO
+
+RUN echo "from softlink folder"
 
 RUN pwd
+
+RUN touch devendar.txt
 
 RUN ls -ltr
 
