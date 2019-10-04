@@ -24,4 +24,6 @@ ls -ltr
 
 sudo cp /*.bar -a /home/iibuser/HERO.IIB.API/
 
+sudo touch devendar.txt
+
 sudo cp /*.* -a /home/iibuser/HERO.IIB.API/buildout
