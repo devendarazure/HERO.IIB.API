@@ -38,4 +38,4 @@ ls -ltr
 
 sudo cp *.bar /home/iibuser/HERO.IIB.API/
 
-sudo cp *.bar /home/iibuser/HERO.IIB.API/buildout
+sudo cp *.* /home/iibuser/HERO.IIB.API/buildout
