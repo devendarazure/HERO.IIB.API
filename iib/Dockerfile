@@ -30,7 +30,7 @@ RUN ln -s /home/iibuser/HERO.IIB.API lnHERO
 
 RUN echo "cd to softlink folder lnHERO"
 
-RUN cd lnHERO
+RUN cd -P lnHERO
 
 RUN echo "from softlink folder"
 
