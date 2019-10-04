@@ -22,6 +22,6 @@ pwd
 
 ls -ltr
 
-sudo cp *.bar /home/iibuser/HERO.IIB.API/
+sudo cp /*.bar -a /home/iibuser/HERO.IIB.API/
 
-sudo cp *.* /home/iibuser/HERO.IIB.API/buildout
+sudo cp /*.* -a /home/iibuser/HERO.IIB.API/buildout
