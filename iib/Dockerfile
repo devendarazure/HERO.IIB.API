@@ -51,5 +51,5 @@ RUN chmod +x start.sh
 # Set entrypoint to run management script
 
 #ENTRYPOINT ["iib_manage.sh"]
-
-CMD ["./start.sh"]
+ENTRYPOINT ["/start.sh"]
+#CMD ["./start.sh"]
