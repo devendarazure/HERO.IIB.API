@@ -46,7 +46,7 @@ RUN chmod +x start.sh
 
 
 
-USER iibuser
+#USER iibuser
 
 # Set entrypoint to run management script
 
