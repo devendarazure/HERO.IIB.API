@@ -50,6 +50,6 @@ USER iibuser
 
 # Set entrypoint to run management script
 
-ENTRYPOINT ["iib_manage.sh"]
+#ENTRYPOINT ["iib_manage.sh"]
 
 CMD ["./start.sh"]
