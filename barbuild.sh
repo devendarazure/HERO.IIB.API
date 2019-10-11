@@ -10,7 +10,7 @@ echo "*******Run iib docker image and execute bar command*******"
 
 export COMPOSE_INTERACTIVE_NO_CLI=1
 
-sudo docker run  -d -v /home/vsts/work/1/s:/home/iibuser/HERO.IIB.API  --name myNode -e LICENSE=accept  -e NODENAME=MYNODE -e SERVERNAME=MYSERVER -t devendar83/iibtoolv4 /bin/bash && sudo docker exec -i myNode bash  -c "cd /home/iibuser/HERO.IIB.API && pwd && ls -ltr  && sudo Xvfb & sudo DISPLAY=":0" /opt/ibm/iib-10.0.0.11/tools/mqsicreatebar -data HERO.IIB.API -b barsripttest11oct.bar -P TestIIBProject -o /home/iibuser/HERO.IIB.API/TestIIBProject/Test_devops.msgflow/Test_devops.msgflow && pwd && ls -ltr && sudo cp *.bar /home/iibuser/HERO.IIB.API/ && exit"
+sudo docker run  -d -v /home/vsts/work/1/s:/home/iibuser/HERO.IIB.API  --name myNode -e LICENSE=accept  -e NODENAME=MYNODE -e SERVERNAME=MYSERVER -t devendar83/iibtoolv4 /bin/bash && sudo docker exec -ti myNode bash  -c "cd /home/iibuser/HERO.IIB.API && pwd && ls -ltr  && sudo Xvfb & sudo DISPLAY=":0" /opt/ibm/iib-10.0.0.11/tools/mqsicreatebar -data HERO.IIB.API -b barsripttest11oct.bar -P TestIIBProject -o /home/iibuser/HERO.IIB.API/TestIIBProject/Test_devops.msgflow/Test_devops.msgflow && pwd && ls -ltr && sudo cp *.bar /home/iibuser/HERO.IIB.API/ && exit"
 
 
 
