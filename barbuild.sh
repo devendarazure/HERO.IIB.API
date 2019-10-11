@@ -12,7 +12,7 @@ echo "*******Run iib docker image and execute bar command*******"
 
 export COMPOSE_INTERACTIVE_NO_CLI=1
 
-sudo docker run  -d -v /home/vsts/work/1/s:/home/iibuser/HERO.IIB.API  --name myNode -e LICENSE=accept  -e NODENAME=MYNODE -e SERVERNAME=MYSERVER -t devendar83/iibtoolv4 /bin/bash && sudo docker exec -it myNode /bin/bash  -c "pwd && ls -ltr && touch testfile30oct.txt && sudo cp *.txt /home/iibuser/HERO.IIB.API/"
+sudo docker run  -d -v /home/vsts/work/1/s:/home/iibuser/HERO.IIB.API  --name myNode -e LICENSE=accept  -e NODENAME=MYNODE -e SERVERNAME=MYSERVER -t devendar83/iibtoolv4 /bin/bash && sudo docker exec -T myNode /bin/bash  -c "pwd && ls -ltr && touch testfile30oct.txt && sudo cp *.txt /home/iibuser/HERO.IIB.API/"
 
 echo  "**********************from host manchine*****************"
 
