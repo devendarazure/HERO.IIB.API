@@ -16,6 +16,8 @@ ENV SERVERNAME=MYSERVER
 COPY start.sh start.sh
 RUN chmod +x start.sh
 
+RUN pwd
+
 #RUN mkdir /home/iibuser/HERO.IIB.API
 
 #RUN chmod -R 777 /home/iibuser/HERO.IIB.API
@@ -51,5 +53,7 @@ RUN chmod +x start.sh
 # Set entrypoint to run management script
 
 #ENTRYPOINT ["iib_manage.sh"]
+
+RUN echo "exectue start.sh from entry point"
 ENTRYPOINT ["./start.sh"]
 #CMD ["./start.sh"]
